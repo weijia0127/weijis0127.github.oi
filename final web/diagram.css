@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+
+    
+}
+
+::-webkit-scrollbar {
+    width: 8px;  /* 设置滚动条的宽度 */
+    height: 12px; /* 用于水平滚动条 */
+}
+
+/* 定制滚动条的轨道 */
+::-webkit-scrollbar-track {
+    background: #000000; /* 设置轨道的背景颜色 */
+}
+
+/* 定制滚动条的滑块 */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0); /* 设置滑块的背景颜色 */
+    border-radius: 10px;        /* 设置滑块的边角为圆角 */
+       /* 设置滑块的边框 */
+}
+
+.scrollable-container {
+    overflow: auto;
+    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none; /* for Internet Explorer and Edge */
+}
+.scrollable-container::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+#diagram{
+    width: 80vw;
+    height:auto;
+    margin-left: 10vw;
+}
+
+#logo{
+    width:3vw;
+    padding:20px;
+    
+}
+
+h1 {
+    color:#F76D3F;
+    font-family: "Shrikhand",serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing:-0.02em;
+    font-size: 40px;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    margin-top: 10px;
+    line-height: 0.6em;
+}
+
+h3{
+    color:aliceblue;
+    font-family: Syncopate;
+    display: flex;
+    justify-content: center; 
+    height: 5vh;
+    line-height: 0.6em;
+}
+

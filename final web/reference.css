@@ -1,0 +1,113 @@
+/* styles.css */
+.column::-webkit-scrollbar {
+    display: none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;  /* 确保整个页面高度撑满视窗 */
+    box-sizing: border-box;
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    width: 8px;  /* 设置滚动条的宽度 */
+    height: 12px; /* 用于水平滚动条 */
+}
+
+/* 定制滚动条的轨道 */
+::-webkit-scrollbar-track {
+    background: #000000; /* 设置轨道的背景颜色 */
+}
+
+/* 定制滚动条的滑块 */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0); /* 设置滑块的背景颜色 */
+    border-radius: 10px;        /* 设置滑块的边角为圆角 */
+       /* 设置滑块的边框 */
+}
+
+.scrollable-container {
+    overflow: auto;
+    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none; /* for Internet Explorer and Edge */
+}
+.scrollable-container::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.container {
+    display: flex;        /* 使用 flex 布局 */
+    height: 100vh;        /* 容器高度为视窗高度 */
+}
+
+.column {
+    flex: 1;              /* 三个栏平分空间 */
+    overflow-y: scroll;   /* 允许纵向滚动 */
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box; /* 边框和内边距不增加宽度 */
+    height: calc(100vh - 20px); /* 减去 margin 的高度 */
+    border: 1px solid #ccc; /* 给栏目添加边框 */
+}
+
+h2{
+    color:white;
+}
+
+#img1{
+  width:60vw;
+}
+
+#img2{
+    width:40vw;
+    margin-left: -70px;
+    margin-top:-100px;
+  }
+
+#logo{
+    width:3vw;
+    padding:20px;
+    
+}
+
+h1 {
+    color:#F76D3F;
+    font-family: "Shrikhand",serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing:-0.02em;
+    font-size: 40px;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    margin-top: 10px;
+    line-height: 0.6em;
+}
+
+h2 {
+    font-family: Courier;
+    font-weight: 100;
+    line-height: 2em;
+}
+
+p {
+    color:white;
+    font-size: 0.1em;
+}
+
+.reference {
+    width:10vw;
+    margin-top: -260px;
+}
+
+.reference-2 {
+    width:10vw;
+    margin-top: -600px;
+    line-height: 2vh;
+}
+
+#col2 {
+    margin-top: 17vh;
+    text-align: end;
+}

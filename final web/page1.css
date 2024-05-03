@@ -1,0 +1,155 @@
+ * {
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  margin:0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*------------font setting---------------*/
+@font-face {
+  font-family: press;
+  src: url(/font/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+.press-start  {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*------------animation setting-----------*/
+@keyframes jump {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px); /* 可以调整这个值以改变浮动的幅度 */
+  }
+}
+
+/*--------------Home Page---------------*/
+a:hover {
+  transform: scale(2);
+  transition: transform 0.3s ease;
+
+}
+
+header {
+  background-color: black;
+  height:20vh;
+  width: auto;
+}
+
+h1{
+  color:white;
+  position:absolute;
+  left: 20px;
+  top:0;
+  background-image: url(image/Group\ 4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width:25vw;
+  text-indent:-99999px;
+
+}
+header li{
+  display:inline;
+  margin-right: 4vw;
+}
+
+header a{
+  color:#E0620D;
+  text-decoration: none;
+  font-family: Lekton;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header ul{
+  position: absolute;
+  right:5vw;
+  top:0;
+  line-height:50px;
+}
+
+.shouye {
+  display: flex;
+  background-color: black;
+  height:60vh;
+  width:100%;
+  
+}
+.info h2{
+  color:#3C9E47;
+  font-size: 6vw;
+  font-family: press;
+  margin-top: 0vh;
+  
+}
+
+.info p{
+    color: white;
+    font-size: 7vw;
+    font-family: press;
+    margin-bottom: 4vh;
+    margin-top: 3vh;
+    display: inline-block;  /* 必须使用inline-block或block来让transform生效 */
+    animation: jump 0.6s ease-in-out infinite;
+}
+
+.info h3{
+  color:#F4D75D;
+  font-size: 8vw;
+  font-family: press;
+}
+
+#container {
+  position:relative;
+  left:60px;
+  height: auto;  /* 高度为视口高度的50% */
+  width: 30%;  /* 大图片的高度 */
+  max-height:50vh;
+  background-image: url('image/Group\ 5.png'); /* 大图片的路径 */
+  background-size: cover;
+  overflow: hidden;
+}
+#bouncing-image {
+  position: absolute;
+  width: 50px; /* 小图片的宽度 */
+  height: 80px; /* 小图片的高度 */
+  background-image: url('image/octpus.jpg'); /* 小图片的路径 */
+  background-size: cover;
+}
+
+footer {
+  background-color:black;
+  color:white;
+  height:40vh;
+}
+
+#learn{
+  color:aqua;
+  font-family: Lekton;
+  animation: jump 0.6s ease-in-out infinite;
+  margin-top: 20px;
+}
+
+h4{
+  font-family: Lekton;
+  font-weight: 400;
+}
+
+
+/* -----------------for Research PAGE -------------------*/
+/*------！！--PAGE1——————————*/
+.research header{
+  background-color: black;
+}
+/*------！！--PAGE2——————————*/
+/*------！！--PAGE3——————————*/
